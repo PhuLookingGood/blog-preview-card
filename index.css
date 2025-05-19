@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree";
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1.45rem;
+}
+
+.card-con {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px hsl(0, 0%, 7%) solid;
+  box-shadow: 10px 10px;
+}
+
+.card-banner {
+  margin-bottom: 1rem;
+}
+
+.card-banner img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.card-info {
+  margin-bottom: 1rem;
+}
+
+.card-info a {
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  text-decoration: none;
+  color: hsl(0, 0%, 7%);
+  font-weight: 800;
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+
+.card-info p {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-title h2 {
+  font-weight: 800;
+  cursor: pointer;
+  &:hover {
+    color: hsl(47, 88%, 63%);
+  }
+}
+
+.card-blog {
+  margin-bottom: 1.5rem;
+}
+
+.card-blog p {
+  color: hsl(0, 0%, 42%);
+}
+
+.card-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-profile img {
+  width: 10%;
+  cursor: pointer;
+}
+
+.card-profile span {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  .card-banner img {
+    height: 200px;
+  }
+}
